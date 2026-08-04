@@ -18,13 +18,13 @@ export default function Stack() {
     return (
         <>
             <section id="stack" className="min-h-screen scroll-mt-20b border-y flex">
-                <div className="w-1/4 p-10 border-r">
+                <div className="w-1/4 py-15 px-10 border-r">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 03 - Directorio</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Stack</h1>
                     <p className="font-mono text-neutral-500 text-xs mt-6">Tecnologías y herramientas con las que trabajo.</p>
                 </div>
 
-                <div className="w-3/4 p-10">
+                <div className="w-3/4 py-15 px-10">
                     <div className="border text-xs bg-neutral-200/60">
                         <div className="text-[13px] flex justify-between border-b py-2 px-5 tracking-widest">
                             <p>~ / SKILLS</p>

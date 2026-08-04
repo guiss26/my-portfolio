@@ -3,7 +3,7 @@ export default function About() {
     return (
         <>
             <section id="about" className="min-h-screen scroll-mt-20 border-y flex">
-                <div className="w-1/3 p-10 border-r">
+                <div className="w-1/3 py-15 px-10 border-r">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 01 - Capitulo</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Sobre mí</h1>
 
@@ -27,7 +27,7 @@ export default function About() {
                     </dl>
                 </div>
 
-                <div className="w-2/3 p-10 font-mono">
+                <div className="w-2/3 py-15 px-10 font-mono">
                     <p className="uppercase text-xs text-neutral-400">Una entrevista breve conmigo mismo</p>
 
                     <p className="leading-relaxed text-[17px] text-neutral-800 first-letter:font-serif-libertinus first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:leading-none first-letter:italic">Soy una desarrolladora graduada de un bootcamp de Desarrollo Web Full-Stack y titulada en Desarrollo de Aplicaciones Multiplataforma. Apasionada por el frontend, donde combino creatividad, lógica y atención al detalle para construir interfaces funcionales y centradas en el usuario. Vengo del autoaprendizaje, de leer documentación y armar pryectos para entender, no solo para mostrar.</p>
