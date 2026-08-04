@@ -21,7 +21,7 @@ export default function Stack() {
                 <div className="w-1/4 p-10 border-r">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 03 - Directorio</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Stack</h1>
-                    <p className="font-mono text-neutral-500 text-xs mt-6">Lo que uso a diario. No una lista de logos, un mapa de trabajo real.</p>
+                    <p className="font-mono text-neutral-500 text-xs mt-6">Tecnologías y herramientas con las que trabajo.</p>
                 </div>
 
                 <div className="w-3/4 p-10">
@@ -39,14 +39,14 @@ export default function Stack() {
                                     </dt>
                                     <dd className="flex flex-wrap gap-3 px-4 py-3 font-mono">
                                         {category.skills.map((skill) => (
-                                            <span key={skill} className="border border-neutral-800 px-3 py-2 text-neutral-900 bg-white hover:bg-lime-400">{skill} </span>
+                                            <span key={skill} className="border border-neutral-800 px-3 py-2 text-neutral-900 bg-white hover:bg-lime-400 text-[13px]">{skill} </span>
                                         ))}
                                     </dd>
                                 </div>
                             ))}
                         </dl>
 
-                        <p className="flex items-center gap-3 py-1 px-5 border-t">$ echo "learning &gt; knowing" <span className=" w-2 h-3 bg-neutral-900 animate-terminal-blink border-l-2 border-neutral-950"></span></p>
+                        <p className="flex items-center gap-3 py-2 px-5 border-t text-[13px]">$ echo "learning &gt; knowing" <span className=" w-2 h-3 bg-neutral-900 animate-terminal-blink border-l-2 border-neutral-950"></span></p>
                     </div>
                 </div>
             </section>
