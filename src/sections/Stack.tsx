@@ -1,19 +1,19 @@
 
+interface SkillCategory {
+    folder: string;
+    skills: string[];
+}
+
+const skillCategories: SkillCategory[] = [
+    { folder: "frontend", skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript(ES6+)', 'TypeScript', 'React (v18+)', 'React Router', 'React Hook Form', 'Material-UI', 'Wordpress'] },
+    { folder: "backend", skills: ['Node.js', 'Express', 'Sequelize', 'Mongoose'] },
+    { folder: "data", skills: ['MySQL, MongoDB'] },
+    { folder: "testing", skills: ['Jest', 'Supertest', 'Vitest', 'TDD'] },
+    { folder: "security", skills: ['JWT', 'Bcrypt'] },
+    { folder: "tooling", skills: ['Git/GitHub', 'Postman', 'Figma', 'VSCode', 'Docker (básico)'] }
+]
+
 export default function Stack() {
-
-    interface SkillCategory {
-        folder: string;
-        skills: string[];
-    }
-
-    const skillCategories: SkillCategory[] = [
-        { folder: "frontend", skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript(ES6+)', 'TypeScript', 'React (v18+)', 'React Router', 'React Hook Form', 'Material-UI', 'Wordpress'] },
-        { folder: "backend", skills: ['Node.js', 'Express', 'Sequelize', 'Mongoose'] },
-        { folder: "data", skills: ['MySQL, MongoDB'] },
-        { folder: "testing", skills: ['Jest', 'Supertest', 'Vitest', 'TDD'] },
-        { folder: "security", skills: ['JWT', 'Bcrypt'] },
-        { folder: "tooling", skills: ['Git/GitHub', 'Postman', 'Figma', 'VSCode', 'Docker (básico)'] }
-    ]
 
     return (
         <>
