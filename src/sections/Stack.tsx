@@ -17,7 +17,7 @@ export default function Stack() {
 
     return (
         <>
-            <section id="stack" className="min-h-screen scroll-mt-20b border-y flex">
+            <section id="stack" className="scroll-mt-20b border-y flex">
                 <div className="w-1/4 py-15 px-10 border-r">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 03 - Directorio</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Stack</h1>

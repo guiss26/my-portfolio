@@ -2,7 +2,7 @@
 export default function About() {
     return (
         <>
-            <section id="about" className="min-h-screen scroll-mt-20 border-y flex">
+            <section id="about" className="scroll-mt-20 border-y flex">
                 <div className="w-1/3 py-15 px-10 border-r">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 01 - Capitulo</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Sobre mí</h1>

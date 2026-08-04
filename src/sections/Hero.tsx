@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function Hero() {
     return (
         <>
-            <section id="hero" className="min-h-screen scroll-mt-20 flex">
+            <section id="hero" className="scroll-mt-20 flex">
                 <div className="border-r w-2/5 p-10">
                     <p className="flex items-center gap-3 text-xs tracking-widest text-neutral-400"><span className="w-3 h-3 bg-lime-400 border border-neutral-950"></span> [ STATUS: READY ]</p>
 
