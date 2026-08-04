@@ -2,6 +2,16 @@
 
 @theme {
   --font-serif-libertinus: "Libertinus Serif", serif;
+  --animate-terminal-blink: terminal-blink 1s step-end infinite;
+}
+
+@keyframes terminal-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
 }
 
 :root {
@@ -10,7 +20,7 @@
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --color-accent-lime: #cf0;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -68,3 +78,6 @@
   box-sizing: border-box; */
 }
 
+html {
+  scroll-behavior: smooth;
+}

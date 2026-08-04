@@ -1,11 +1,20 @@
-// import { useState } from 'react'
+
+import About from "./sections/About"
+import Contact from "./sections/Contact"
+import Hero from "./sections/Hero"
+import Projects from "./sections/Projects"
+import Stack from "./sections/Stack"
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <main className="pt-20 bg-neutral-50 min-h-screen scroll-smooth bg-neutral-200/50">
+        <Hero />
+        <About />
+        <Projects />
+        <Stack />
+        <Contact />
+      </main>
     </>
   )
 }
