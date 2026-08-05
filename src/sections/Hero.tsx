@@ -4,8 +4,9 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function Hero() {
     return (
         <>
-            <section id="hero" className="scroll-mt-20 flex">
-                <div className="border-r w-2/5 p-10">
+            <section id="hero" className="scroll-mt-20 md:flex">
+                {/* Izquierda */}
+                <div className="border-b border-neutral-300 md:border-r md:border-black md:w-2/5 p-10">
                     <p className="flex items-center gap-3 text-xs tracking-widest text-neutral-400"><span className="w-3 h-3 bg-lime-400 border border-neutral-950"></span> [ STATUS: READY ]</p>
 
                     <div className="border border-neutral-950 p-5 mt-6 bg-white">
@@ -28,24 +29,25 @@ export default function Hero() {
                     </div>
 
                     <dl className="space-y-4 text-xs font-mono mt-6">
-                        <div className="grid grid-cols-2">
-                            <dt className="text-neutral-500 ">ROL</dt>
-                            <dd className="text-[12px]">Desarrolladora Frontend Junior</dd>
+                        <div className="grid grid-cols-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">ROL</dt>
+                            <dd className="text-[12px] lg:w-1/2">Desarrolladora Frontend Junior</dd>
                         </div>
 
-                        <div className="grid grid-cols-2">
-                            <dt className="text-neutral-500">UBICACIÓN</dt>
-                            <dd className="text-[12px]">Madrid, España</dd>
+                        <div className="grid grid-cols-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">UBICACIÓN</dt>
+                            <dd className="text-[12px] lg:w-1/2">Madrid, España</dd>
                         </div>
 
-                        <div className="grid grid-cols-2">
-                            <dt className="text-neutral-500">EMAIL</dt>
-                            <dd className="text-[12px]">guissellapl@gmail.com</dd>
+                        <div className="grid grid-cols-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">EMAIL</dt>
+                            <dd className="text-[12px] lg:w-1/2">guissellapl@gmail.com</dd>
                         </div>
                     </dl>
                 </div>
 
-                <div className="w-3/5 p-10">
+                {/* Derecha */}
+                <div className="md:w-3/5 p-10">
                     <div className="font-mono uppercase text-xs tracking-widest text-neutral-400 flex justify-between">
                         <p className="">VOL. 01 · Edición portfolio</p>
                         <p>2026</p>
@@ -61,9 +63,9 @@ export default function Hero() {
 
                     <p className="text-neutral-600 tracking-normal font-mono mt-4">Apasionada por crear experiencias digitales a través de interfaces con criterio, código limpio y curiosidad digital.</p>
 
-                    <div className="flex gap-3 text-xs mt-8 tracking-widest">
-                        <a href="#projects" className="flex items-center gap-3 uppercase text-lime-400 border bg-neutral-950 py-2 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950">Ver proyectos <BsArrowDownRight /> </a>
-                        <a href="#contact" className="flex items-center gap-3 uppercase border py-2 px-3 hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950">Trabajemos juntos <BsArrowUpRight /> </a>
+                    <div className="flex gap-3 text-[10px] md:text-xs mt-8 tracking-widest">
+                        <a href="#projects" className="flex items-center gap-3 uppercase text-lime-400 border bg-neutral-950 py-1 md:py-2 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950">Ver proyectos <BsArrowDownRight /> </a>
+                        <a href="#contact" className="flex items-center gap-3 uppercase border py-1 md:py-2 px-3 hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950">Trabajemos juntos <BsArrowUpRight /> </a>
                     </div>
                 </div>
             </section>
