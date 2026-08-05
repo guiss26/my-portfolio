@@ -8,29 +8,31 @@ export default function About() {
                     <h1 className="text-5xl font-serif-libertinus mt-4">Sobre mí</h1>
 
                     <dl className="space-y-4 text-xs font-mono mt-6">
-                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2">
-                            <dt className="text-neutral-500">DISPONIBILIDAD</dt>
-                            <dd className="text-[12px]">Full-time / Junior</dd>
+                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">DISPONIBILIDAD</dt>
+                            <dd className="text-[12px] lg:w-1/2">Full-time / Junior</dd>
                         </div>
-                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2">
-                            <dt className="text-neutral-500">UBICACIÓN</dt>
-                            <dd className="text-[12px]">Remoto / Híbrido / Presencial</dd>
+
+                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">UBICACIÓN</dt>
+                            <dd className="text-[12px] lg:w-1/2">Remoto / Híbrido / Presencial</dd>
                         </div>
-                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2">
-                            <dt className="text-neutral-500">IDIOMAS</dt>
-                            <dd className="text-[12px]">ES (Nativo) · EN (B1)</dd>
+
+                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">IDIOMAS</dt>
+                            <dd className="text-[12px] lg:w-1/2">ES (Nativo) · EN (B1)</dd>
                         </div>
-                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2">
-                            <dt className="text-neutral-500">FOCO</dt>
-                            <dd className="text-[12px]">Frontend · UI</dd>
+                        <div className="grid grid-cols-2 border-b border-neutral-300 pb-2 md:flex md:flex-col md:gap-2 lg:flex-row lg:justify-between">
+                            <dt className="text-neutral-500 lg:w-1/2">FOCO</dt>
+                            <dd className="text-[12px] lg:w-1/2">Frontend · UI</dd>
                         </div>
                     </dl>
                 </div>
 
                 <div className="w-2/3 py-15 px-10 font-mono">
-                    <p className="uppercase text-xs text-neutral-400">Una entrevista breve conmigo mismo</p>
+                    <p className="uppercase text-xs text-neutral-400 mb-4">Una entrevista breve conmigo mismo</p>
 
-                    <p className="leading-relaxed text-[17px] text-neutral-800 first-letter:font-serif-libertinus first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:leading-none first-letter:italic">Soy una desarrolladora graduada de un bootcamp de Desarrollo Web Full-Stack y titulada en Desarrollo de Aplicaciones Multiplataforma. Apasionada por el frontend, donde combino creatividad, lógica y atención al detalle para construir interfaces funcionales y centradas en el usuario. Vengo del autoaprendizaje, de leer documentación y armar pryectos para entender, no solo para mostrar.</p>
+                    <p className="leading-relaxed text-[17px] text-neutral-800 first-letter:font-serif-libertinus first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:leading-none first-letter:italic">Soy una desarrolladora graduada de un bootcamp de Desarrollo Web Full-Stack y titulada en Desarrollo de Aplicaciones Multiplataforma. Apasionada por el frontend, donde combino creatividad, lógica y atención al detalle para construir interfaces funcionales y centradas en el usuario. Vengo del autoaprendizaje, de leer documentación y armar proyectos para entender, no solo para mostrar.</p>
                     
                     <div className="flex items-center gap-4 my-8 clear-left">
                         <hr className="flex-1 border-neutral-400"/>
