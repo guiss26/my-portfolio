@@ -58,8 +58,8 @@ export default function Contact() {
 
     return (
         <>
-            <section id="contact" className=" scroll-mt-20 font-mono flex">
-                <div className="w-2/5 py-15 px-10 border-r ">
+            <section id="contact" className=" scroll-mt-20 font-mono md:flex">
+                <div className="md:w-2/5 py-15 px-10 border-b border-neutral-300 md:border-r md:border-black">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 04 - Última página</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4"> Hablemos</h1>
                     <p className="font-mono text-neutral-500 text-xs my-6">Si estás buscando alguien junior con criterio, ganas y tiempo para aprender, hablemos. Respondo en menos de 24h.</p>
@@ -69,7 +69,7 @@ export default function Contact() {
                     <a className="flex items-center gap-2 text-xs/7 text-neutral-800" href="https://www.linkedin.com/in/guissella-perez/"><FiLinkedin className="text-neutral-500"/> linkedin.com/in/guissella-perez</a>
                 </div>
 
-                <div className="w-3/5 py-15 px-10">
+                <div className="md:w-3/5 py-15 px-10">
                     <form onSubmit={handleSubmit(onSubmit)} noValidate id="form" className="border p-6 bg-white text-xs tracking-widest shadow-[5px_5px_0px_0px_rgba(23,23,23,1)] transition-all duration-200 hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-[6px_6px_0px_0px_rgba(23,23,23,1)]">
                         <div className="flex justify-between text-neutral-400 border-b pb-2">
                             <p>COMPOSE · NUEVO MENSAJE</p>
@@ -77,10 +77,10 @@ export default function Contact() {
                         </div>
 
                         <fieldset className="mt-5">
-                            <div className="flex gap-4 mb-5">
-                                <div className="w-1/2 flex flex-col gap-2">
+                            <div className="flex flex-col sm:flex-row gap-4 mb-5">
+                                <div className="w-full sm:w-1/2 flex flex-col gap-2">
                                     <label htmlFor="name" className="text-neutral-500">NOMBRE *</label>
-                                    <input id="name" type="text" className="bg-neutral-300/40 border p-2" placeholder="Franco Lopez" {...register("name", { 
+                                    <input id="name" type="text" className="bg-neutral-300/40 border p-2 w-full" placeholder="Franco Lopez" {...register("name", { 
                                         required: "Este campo es requerido", 
                                         pattern: {
                                             value: /^[A-Za-zÀ-ÿ\s]+$/,
@@ -91,9 +91,9 @@ export default function Contact() {
                                         <span className="text-red-500 normal-case tracking-normal">{errors.name.message}</span>
                                     )}
                                 </div>
-                                <div className="w-1/2 flex flex-col gap-2">
+                                <div className="w-full sm:w-1/2 flex flex-col gap-2">
                                     <label htmlFor="email" className="text-neutral-500">EMAIL *</label>
-                                    <input type="email" id="email" className="bg-neutral-300/40 border p-2" placeholder="example@empresa.com" {...register("email", { 
+                                    <input type="email" id="email" className="bg-neutral-300/40 border p-2 w-full" placeholder="example@empresa.com" {...register("email", { 
                                         required: "Este campo es requerido",
                                         pattern: {
                                             value: /^\S+@\S+\.\S+$/,
