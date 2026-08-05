@@ -108,18 +108,18 @@ export default function Projects() {
 
     return (
         <>
-            <section id="projects" className=" scroll-mt-20 font-mono flex border-b">
-                <div className="w-1/3 py-15 px-10 border-r">
+            <section id="projects" className=" scroll-mt-20 font-mono md:flex border-b">
+                <div className="md:w-1/3 py-15 px-10 border-b border-neutral-300 md:border-r md:border-black">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 02 - Obra seleccionada</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4"> Proyectos</h1>
                 </div>
-                <div className="w-2/3 py-15 px-10 text-[17px] text-neutral-700">
+                <div className="md:w-2/3 py-15 px-10 text-[17px] text-neutral-700">
                     <p>Una pequeña curaduría de trabajos hechos para entender, no solo mostrar. Cada uno de ellos me ha ido dando la experiencia necesaria para seguir adelante con el siguiente y enfrentarme a nuevos retos.</p>
                 </div>
             </section>
 
             <section className="py-10 font-mono">
-                <article className='grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-9 p-10'>
+                <article className='grid md:grid-cols-2 lg:grid-cols-3 gap-9 p-10'>
                     {visibleProjects.map((project) => (
                         <div key={project.id} className='bg-neutral-300 shadow-[5px_5px_0px_0px_rgba(23,23,23,1)] flex flex-col h-full'>
                             <figure className='h-60 object-cover'>
