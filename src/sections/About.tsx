@@ -3,7 +3,7 @@ export default function About() {
     return (
         <>
             <section id="about" className="scroll-mt-20 border-y md:flex">
-                <div className="md:w-1/3 py-15 px-10 border-b border-neutral-300 md:border-r">
+                <div className="md:w-1/3 py-15 px-10 border-b border-neutral-300 md:border-r md:border-black">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 01 - Capitulo</p>
                     <h1 className="text-5xl font-serif-libertinus mt-4">Sobre mí</h1>
 
