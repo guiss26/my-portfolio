@@ -1,4 +1,4 @@
-import { LuMoon } from "react-icons/lu";
+import { LuMoon, LuSun } from "react-icons/lu";
 import { FiDownload } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -20,6 +20,24 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const [hidden, setHidden] = useState(false)
     const lastScrollY = useRef(0)
+
+    // modo claro/oscuro
+    const [isDark, setIsDark] = useState(() => {
+        const stored = localStorage.getItem("theme")
+        if (stored) return stored === "dark"
+
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+    }) 
+
+    useEffect(() => {
+        if (isDark) {
+            document.documentElement.classList.add("dark")
+            localStorage.setItem("theme", "dark")
+        } else {
+            document.documentElement.classList.remove("dark")
+            localStorage.setItem("theme", "light")
+        }
+    }, [isDark])
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,38 +61,38 @@ export default function Navbar() {
 
     return (
         <>
-            <header className={`fixed top-0 left-0 right-0 z-50 bg-neutral-200/50 backdrop-blur-md border-b border-b-neutral-950 transition-shadow duration-300 shadow-md tracking-widest ${
+            <header className={`fixed top-0 left-0 right-0 z-50 dark:bg-neutral-950 bg-neutral-200/50 backdrop-blur-md border-b border-b-neutral-950 dark:border-b-neutral-400 transition-shadow duration-300 shadow-md tracking-widest ${
                 hidden ? "-translate-y-full" : "translate-y-0"
                 }`}>
                 <nav className="flex justify-between items-center py-2 px-8">
                     <a href="#hero">
-                        <h3>[ GP ] <span className="tracking-wide text-neutral-500">/ PORTFOLIO</span></h3>
+                        <h3 className="dark:text-white">[ GP ] <span className="tracking-wide text-neutral-500 dark:text-neutral-300">/ PORTFOLIO</span></h3>
                     </a>
 
                     <div className="flex items-center gap-5">
                         <ul className="hidden lg:flex gap-7">
                             {links.map((link) => (
                                 <li key={link.href}>
-                                    <a className="text-neutral-500 hover:text-neutral-950 text-xs" href={link.href}>{link.label}</a>
+                                    <a className="text-neutral-500 dark:text-neutral-200 dark:hover:text-lime-400 hover:text-neutral-950 text-xs" href={link.href}>{link.label}</a>
                                 </li>
                             ))}
                         </ul>
 
-                        <button className="border py-2 px-3 hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950"> <LuMoon /></button>
+                        <button onClick={() => setIsDark(!isDark)} className="border py-2 px-3 dark:bg-neutral-200 dark:hover:bg-lime-400 dark:text-black dark:hover:text-black hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950" aria-label="Cambiar tema"> {isDark ? <LuSun /> : <LuMoon />} </button>
 
-                        <a href="/CV_guissellaperez_frontend_developer.pdf" download className="hidden lg:flex items-center gap-2 text-lime-400 border bg-neutral-950 py-2 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950 text-xs"> <FiDownload /> DESCARGAR CV</a>
+                        <a href="/CV_guissellaperez_frontend_developer.pdf" download className="hidden lg:flex items-center gap-2 text-lime-400 border dark:bg-neutral-200 dark:hover:bg-lime-400 dark:text-black dark:hover:text-black bg-neutral-950 py-2 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950 text-xs"> <FiDownload /> DESCARGAR CV</a>
 
-                        <button className="lg:hidden text-2xl" onClick={() => setIsOpen(!isOpen)} aria-label="Abrir menu">
+                        <button className="lg:hidden text-2xl dark:text-neutral-100" onClick={() => setIsOpen(!isOpen)} aria-label="Abrir menu">
                             {isOpen ? <RxCross2 /> : <RxHamburgerMenu />}
                         </button>
                     </div>
                 </nav>
 
                 {isOpen && (
-                    <ul className="lg:hidden flex flex-col items-center gap-5 py-6 border-t border-neutral-950 bg-neutral-200/95 backdrop-blur-md">
+                    <ul className="lg:hidden flex flex-col items-center gap-5 py-6 border-t border-neutral-950 dark:border-neutral-700 bg-neutral-200/95 dark:bg-neutral-900/95 backdrop-blur-md">
                         {links.map((link) => (
                             <li key={link.href} className="hover:bg-lime-400 px-3 ">
-                                <a href={link.href} className="text-neutral-600 hover:text-neutral-950 text-xs" onClick={() => setIsOpen(false)}>{link.label}</a>
+                                <a href={link.href} className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-950 text-xs" onClick={() => setIsOpen(false)}>{link.label}</a>
                             </li>
                         ))}
                         <li>
