@@ -6,7 +6,7 @@ export default function Hero() {
         <>
             <section id="hero" className="scroll-mt-20 md:flex dark:bg-neutral-950">
                 {/* Izquierda */}
-                <div className="border-b border-neutral-300 md:border-r md:border-black md:w-2/5 p-10 pt-15">
+                <div className="border-b border-neutral-300 dark:border-r-neutral-200 md:border-r md:border-black md:w-2/5 p-10 pt-15">
                     <p className="flex items-center gap-3 text-xs tracking-widest text-neutral-400"><span className="w-3 h-3 bg-lime-400 border border-neutral-950"></span> [ STATUS: READY ]</p>
 
                     <div className="border border-neutral-950 p-5 mt-6 bg-white dark:bg-neutral-900 dark:border-white">
