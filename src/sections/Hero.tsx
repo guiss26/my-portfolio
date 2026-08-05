@@ -61,11 +61,11 @@ export default function Hero() {
                         </span>
                     </h1>
 
-                    <p className="text-neutral-600 tracking-normal font-mono mt-4">Apasionada por crear experiencias digitales a través de interfaces con criterio, código limpio y curiosidad digital.</p>
+                    <p className="text-neutral-600 tracking-normal font-mono mt-4 text-sm">Apasionada por crear experiencias digitales a través de interfaces con criterio, código limpio y curiosidad digital.</p>
 
-                    <div className="flex gap-3 text-[10px] md:text-xs mt-8 tracking-widest">
-                        <a href="#projects" className="flex items-center gap-3 uppercase text-lime-400 border bg-neutral-950 py-1 md:py-2 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950">Ver proyectos <BsArrowDownRight /> </a>
-                        <a href="#contact" className="flex items-center gap-3 uppercase border py-1 md:py-2 px-3 hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950">Trabajemos juntos <BsArrowUpRight /> </a>
+                    <div className="flex gap-3 text-[10px] md:text-[13px] mt-8 tracking-widest">
+                        <a href="#projects" className="flex items-center gap-3 uppercase text-lime-400 border bg-neutral-950 py-1 px-4 hover:text-neutral-950 hover:bg-lime-400 hover:border border-neutral-950">Ver proyectos <BsArrowDownRight /> </a>
+                        <a href="#contact" className="flex items-center gap-3 uppercase border py-1 px-3 hover:text-lime-400 hover:bg-neutral-950 hover:border-neutral-950">Trabajemos juntos <BsArrowUpRight /> </a>
                     </div>
                 </div>
             </section>
