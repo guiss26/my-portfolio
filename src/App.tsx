@@ -8,7 +8,7 @@ import Stack from "./sections/Stack"
 function App() {
   return (
     <>
-      <main className="pt-20 bg-neutral-50 min-h-screen scroll-smooth bg-neutral-200/50">
+      <main className="pt-10 bg-neutral-50 min-h-screen scroll-smooth bg-neutral-200/50">
         <Hero />
         <About />
         <Projects />
