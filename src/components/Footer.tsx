@@ -28,10 +28,10 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="font-mono flex justify-between text-xs py-3 px-10 border-t border-t-neutral-600 text-neutral-500">
+                <div className="font-mono flex justify-between text-[13px] py-3 px-10 border-t border-t-neutral-600 text-neutral-500 tracking-widest">
                     <p>© 2026 • GUISSELLA PÉREZ. TODOS LOS DERECHOS RESERVADOS</p>
 
-                    <p className="flex items-center gap-3"><span className="w-2 h-2 bg-lime-400 animate-pulse"></span> [ STATUS: OPEN TO WORK ]</p>
+                    <p className="flex items-center gap-3"><span className="w-2 h-2 bg-lime-400"></span> [ STATUS: OPEN TO WORK ]</p>
                 </div>
             </footer>
         </>
