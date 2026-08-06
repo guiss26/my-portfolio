@@ -1,9 +1,10 @@
+
 # 🌟 Portfolio Personal — Guissella Pérez
 
 Bienvenido/a a mi portfolio personal, una aplicación web (SPA) desarrollada con React, TypeScript y Tailwind CSS, donde muestro mis proyectos, habilidades y experiencia como desarrolladora frontend/fullstack.
 
 🔗 **Demo en vivo:** [https://my-portfolio-4i2h.vercel.app/]
-
+<img width="1349" height="598" alt="hero-portfolio" src="https://github.com/user-attachments/assets/1cb8fd95-3750-49e5-8138-0da28436b19c" />
 ---
 
 ## 🛠️ Tecnologías utilizadas
