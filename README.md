@@ -2,7 +2,7 @@
 
 Bienvenido/a a mi portfolio personal, una aplicación web (SPA) desarrollada con React, TypeScript y Tailwind CSS, donde muestro mis proyectos, habilidades y experiencia como desarrolladora frontend/fullstack.
 
-🔗 **Demo en vivo:** [enlace-a-mi-portfolio-desplegado]
+🔗 **Demo en vivo:** [https://my-portfolio-4i2h.vercel.app/]
 
 ---
 
