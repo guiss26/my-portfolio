@@ -20,7 +20,7 @@ export default function Pagination({ page, setPage, max }: PaginationProps) {
     }
 
     return (
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-3 dark:text-white">
             <button onClick={previousPage} disabled={page <=1} className="cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 transition-all">
                 <FiChevronLeft />
             </button>

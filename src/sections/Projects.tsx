@@ -108,34 +108,34 @@ export default function Projects() {
 
     return (
         <>
-            <section id="projects" className=" scroll-mt-20 font-mono md:flex border-b">
-                <div className="md:w-1/3 py-15 px-10 border-b border-neutral-300 md:border-r md:border-black">
+            <section id="projects" className=" scroll-mt-20 font-mono md:flex border-b dark:bg-neutral-950 dark:border-neutral-200">
+                <div className="md:w-1/3 py-15 px-10 border-b border-neutral-300 dark:border-neutral-200 md:border-r md:border-black">
                     <p className="uppercase font-mono text-xs text-neutral-400">§ 02 - Obra seleccionada</p>
-                    <h1 className="text-5xl font-serif-libertinus mt-4"> Proyectos</h1>
+                    <h1 className="text-5xl font-serif-libertinus mt-4 dark:text-white"> Proyectos</h1>
                 </div>
                 <div className="md:w-2/3 py-15 px-10 text-[17px] text-neutral-700">
-                    <p>Una pequeña curaduría de trabajos hechos para entender, no solo mostrar. Cada uno de ellos me ha ido dando la experiencia necesaria para seguir adelante con el siguiente y enfrentarme a nuevos retos.</p>
+                    <p className='dark:text-neutral-300'>Una pequeña curaduría de trabajos hechos para entender, no solo mostrar. Cada uno de ellos me ha ido dando la experiencia necesaria para seguir adelante con el siguiente y enfrentarme a nuevos retos.</p>
                 </div>
             </section>
 
-            <section className="py-10 font-mono">
+            <section className="py-10 font-mono dark:bg-neutral-950">
                 <article className='grid md:grid-cols-2 lg:grid-cols-3 gap-9 p-10'>
                     {visibleProjects.map((project) => (
-                        <div key={project.id} className='bg-neutral-300 shadow-[5px_5px_0px_0px_rgba(23,23,23,1)] flex flex-col h-full'>
+                        <div key={project.id} className='bg-neutral-300 dark:bg-neutral-900 dark:text-neutral-400 dark:border shadow-[5px_5px_0px_0px_rgba(23,23,23,1)] dark:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] flex flex-col h-full'>
                             <figure className='h-60 object-cover'>
                                 <img src={project.photo} alt={project.alt} className='h-full w-full' />
                             </figure>
 
                             <figcaption className='text-left p-6 flex flex-col justify-between flex-1'>
                                 <div>
-                                    <h3 className='font-bold font-serif-libertinus mb-2'>{project.title} </h3>
-                                    <p className='text-neutral-600 text-[13px]/4'>{project.description}</p>
+                                    <h3 className='font-bold font-serif-libertinus dark:text-white mb-2'>{project.title} </h3>
+                                    <p className='text-neutral-600 dark:text-neutral-400 text-[13px]/4'>{project.description}</p>
                                 </div>
 
                                 <div>
                                     <div className='mt-4 inline-flex gap-1.5 flex-wrap'>
                                         {project.tools.map((tool) => (
-                                            <span key={tool} className='bg-white py-0.5 px-3 border border-neutral-800 text-neutral-800 text-[12px]'>{tool}</span>
+                                            <span key={tool} className='bg-white dark:bg-neutral-950 dark:border-neutral-200 dark:text-neutral-200 py-0.5 px-3 border border-neutral-800 text-neutral-800 text-[12px]'>{tool}</span>
                                         ))}
                                     </div>
 
